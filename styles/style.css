@@ -12,13 +12,28 @@
     display: flex;
   }
 
+  .btn-primary {
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+  }
+
   /* header style  */
 
   /* navbar styles */
   .navbar {
     justify-content: space-between;
+    align-items: center;
   }
 
+  .brand {
+    font-weight: 700;
+    font-size: 3rem;
+  }
   .nav-item {
     list-style: none;
     margin-right: 30px;
@@ -29,7 +44,7 @@
   }
 
   .bg-light {
-    background-color: #FF900E;
+    background-color: rgba(255, 144, 14, 0.1);
   }
 
   .text-gray {
@@ -43,4 +58,26 @@
   .navbar, .banner {
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  .banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .banner-title {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+
+  .banner-image {
+    max-width: 100%;
+  }
+  /* Responsive media query */
+  @media screen and (max-width: 576px) {
+    .navbar, .nav-links {
+      flex-direction: column;
+    }
   }
